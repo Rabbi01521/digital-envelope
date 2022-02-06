@@ -86,6 +86,7 @@
   transform-style: preserve-3d;
   perspective: 700px;
   cursor: pointer;
+  border-radius: 10px;
 }
 .mail:before {
   content: "";
@@ -97,6 +98,7 @@
   border-radius: 0px 0px 20px 20px;
   z-index: 5;
   left: 0;
+  border-radius: 10px;
 }
 .mail:after {
   content: "";
@@ -107,6 +109,7 @@
   border-bottom: 150px solid #0073e6;
   border-radius: 0px 0px 20px 20px;
   left: 0;
+  border-radius: 10px;
 }
 .mail .cover {
   position: absolute;
@@ -117,19 +120,26 @@
   transform-origin: top;
   transition: 1s 1s ease;
   z-index: 4;
+  border-radius: 10px;
 }
 .mail:hover .cover {
   transform: rotateX(180deg);
   transition: 1s ease;
 }
+
+/* .coverOpen {
+  transform: rotateX(180deg);
+  transition: 1s ease;
+} */
+
 .mail .image {
   position: absolute;
   width: 380px;
   left: 10px;
-  height: 290px;
+  height: 250px;
   top: 10px;
   background-color: red;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 10px;
   background-image: url("../../images/bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -137,6 +147,6 @@
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .mail:hover .image {
-  top: -140px;
+  top: -80px;
   transition: 1s 1s ease;
 }
